@@ -1,0 +1,120 @@
+<!DOCTYPE html> <!-- tag untuk menentukan type dokumen -->
+<html lang="en"> <!-- tag untuk memberi tahu browser bahwa konten di halaman berbahasa inggris -->
+<head> <!-- tag yang digunakan sebagai wadah untuk tag title,style,meta,link. tag ini berfungsi untuk penampilan dan pengoptimalan halaman web, informasi pada tag ini tidak ditampilkan langsung ke halaman -->
+  <meta charset="UTF-8"> <!-- tag untuk menentukan pengkodean karakter pada halaman web-->
+  <title>Resume</title>  <!-- tag untuk menampilkan judul web -->
+  <!-- tag style berfungsi untuk mengatur CSS seperti tampilan halaman, tata letak halaman, warna, font  -->
+  <style> 
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 40px; 
+    }
+    h2 {
+      text-decoration: underline;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .name {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    ul {
+      margin-top: 5px;
+    }
+    .profile-image {
+      display: block;
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+    table {
+      margin-top: 15px;
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid black;
+    }
+    td {
+      padding: 8px;
+      border: 1px solid black;
+      vertical-align: top;
+    }
+    .image-row {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .image-row img {
+      width: 10%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body> <!-- tag ini berfungsi untuk mendefinisikan isi dari halaman web, berisi elemen paragraf, judul, gambar  -->
+
+  <img src="pp.png" alt="Profile Image" class="profile-image">  <!-- tag ini berfungsi untuk menentukan gambar yang akan ditampilkan -->
+
+  <!-- tag p untuk membuat paragraf pada halaman web -->
+  <p class="name">
+    Rohmat Yulianto
+  </p>
+
+  <!-- link internal -->
+  <p> 
+    <a href="index.html" >Home</a> 
+    <a href="contact.html" >Contact</a> 
+    <a href="about.html" >About</a>
+  </p>
+
+  <h2>SUMMARY</h2> <!-- tag untuk menampilkan judul pada halaman artikel -->
+  <p>
+    I’m a Linux enthusiast and have experiences with Open Sources technologies with over 5 years in IT solutions,
+    specializing in the banking and retail industries. Responsible for providing support to clients regarding simple to
+    complex IT problems. 
+  </p>
+
+  <p>
+    Have expertise in operating Linux systems, VMware, Proxmox and Database Administration.
+  </p>
+
+  <p>
+    Experience of installing and config Redhat Enterprise Linux, configuration nginx web server, configuration Elasticsearch-Logstash-Kibana,
+    setup database replication on MySQL Database.
+  </p>
+
+  <h2>EXPERIENCE</h2>
+  <p class="section-title">
+    PT PLUS - Tangerang, Indonesia<br>
+    Network &amp; System Administrator (December 2022 - Present)
+  </p>
+  
+  <ul>  <!-- tag yang digunakan untuk membuat daftar yang tidak berurutan, tag li untuk menampilkan item dalam daftar -->
+    <li>Managed server infrastructures and data center operations across Linux and Windows operating system.</li> 
+    <li>Planned, installed, configured, and optimized IT infrastructures to achieve high availability and performance.</li>
+  </ul>
+
+  <table> <!-- tag yang digunakan untuk membuat tabel, elemen penyusun table ada di dalam tag ini -->
+    <tr> <!-- tag ini berfungsi untuk membuat baris dalam tabel -->
+      <td><strong>Monitoring &amp; Logging</strong></td> <!-- tag yang digunakan untuk membuat sel data dalam tabel -->
+      <td>Set up centralized logging and monitoring using the ELK Stack (Elasticsearch, Logstash, Kibana), Prometheus, and Grafana.</td>
+    </tr>
+    <tr>
+      <td><strong>Database Management</strong></td>
+      <td>Optimized MySQL, automated backups, and implemented high-availability setups using replication.</td>
+    </tr>
+  </table>
+
+  <div class="image-row">
+    <img src="image1.png" alt="Image 1"> 
+    <img src="image2.png" alt="Image 2">
+    <img src="image3.png" alt="Image 3">
+    <img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*DfBbVqPXfIXGFQCa1BrV8g.jpeg" alt="Image 4">
+    <img src="https://course-net.com/wp-content/uploads/2022/11/ubuntu-logo.jpeg" alt="Image 5">
+    <img src="https://dynfi.com/media/products/proxmox-logo-color-stacked_IFwlKc2.png" alt="Image 6">
+  </div>
+
+</body>
+</html>
